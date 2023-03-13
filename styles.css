@@ -1,0 +1,149 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #ffffff;
+}
+
+p{
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+}
+
+/* wrapper */
+main {
+    display: flex;
+    max-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem ;
+}
+
+/* your results */
+.result {
+    border-radius: 1rem;
+    background: linear-gradient(
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%));
+    padding: 2rem;
+    max-width: 15rem;
+    color: hsl(0, 0%, 100%) ;   
+    text-align: center;
+}
+
+.circle{
+    display: inline-block;
+    min-width: 10rem;
+    min-height: 0rem;
+    size: 10px 10px 10px;
+    border-radius: 50%; 
+    background: linear-gradient(
+        hsla(256, 72%, 46%, 1), 
+        hsla(241, 72%, 46%, 0));
+    margin: auto;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.circle h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/*Summary box */
+.sum{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;  
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: small;
+    margin: auto;
+}
+
+.label{
+    float: left;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+.score{
+    float: right;
+    height: auto;
+    color: hsl(241, 100%, 89%);
+    margin: auto;
+    padding: 10px;
+}
+
+.score b {
+    color: black;
+}
+
+.react {
+    background-color: rgb(255, 87, 87, 0.1);
+    color: hsl(0, 100%, 67%);
+    border-radius: 0.5rem;
+    width: auto;
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+    border-radius: 0.5rem;
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+    border-radius: 0.5rem;
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+    border-radius: 0.5rem;
+}
+
+button{margin-top: 15px ;
+    border: none;
+    border-radius: 1rem;
+    background-color:hsl(224, 30%, 27%);
+    color: #ffffff;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button:active {
+    background: linear-gradient(
+    hsl(252, 100%, 67%), 
+    hsl(241, 81%, 54%));
+}
+
+img{
+    object-fit: contain;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    position: fixed;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* mobile */
+@media only screen and (max-width: 375px){
+    main {
+        display: inline-block;
+        margin-top: 10rem; 
+        box-shadow: none;
+    }
+}
